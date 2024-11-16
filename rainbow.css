@@ -1,0 +1,8 @@
+.rainbow-bg,.rainbow-bg-txt{background:repeating-linear-gradient(90deg,red, violet, indigo, blue, green, yellow, orange, red);}
+.rainbow-bg-txt{background-clip:text;color:transparent;}
+.r-anim{background-size:800% 800%;animation:rainbow 30s infinite linear;}
+.rainbow-bg-diagonal{background:linear-gradient(-45deg,violet, indigo, blue, green, yellow, orange, red)}
+@keyframes rainbow {
+    from {background-position:-60%;}
+    to {background-position: 800% 0%;}
+}
