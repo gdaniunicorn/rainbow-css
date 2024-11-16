@@ -1,8 +1,18 @@
-.rainbow-bg,.rainbow-bg-txt{background:repeating-linear-gradient(90deg,red, violet, indigo, blue, green, yellow, orange, red);}
-.rainbow-bg-txt{background-clip:text;color:transparent;}
+.rainbow-lg,.rainbow-lg-txt{background:repeating-linear-gradient(90deg,red, violet, indigo, blue, green, yellow, orange, red);}
+.rainbow-lg-txt{background-clip:text;color:transparent;}
 .r-anim{background-size:800% 800%;animation:rainbow 30s infinite linear;}
-.rainbow-bg-diagonal{background:linear-gradient(-45deg,violet, indigo, blue, green, yellow, orange, red)}
+.rainbow-lg2{background:linear-gradient(-45deg,violet, indigo, blue, green, yellow, orange, red)}
+.rainbow{background:red;animation:rainbow-change 20s infinite linear;}
 @keyframes rainbow {
     from {background-position:-60%;}
     to {background-position: 800% 0%;}
+}
+@keyframes rainbow-change {
+  0% {background: red}
+  19% {background: orange}
+  38% {background: yellow}
+  57% {background: green}
+  76% {background: blue}
+  95% {background: purple}
+  100% {background: red}
 }
